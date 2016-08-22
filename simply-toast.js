@@ -29,7 +29,7 @@
 		{
 			'position': (options.appendTo === 'body' ? 'fixed' : 'absolute'),
 			'margin': 0,
-			'z-index': '9999',
+			'z-index': options.zIndex,
 			'display': 'none',
 			'min-width': options.minWidth,
 			'max-width': options.maxWidth
@@ -104,6 +104,7 @@
 		maxWidth: 450,
 		delay: 4000,
 		allowDismiss: true,
-		spacing: 10
+		spacing: 10,
+		zIndex: 9999
 	};
 })();
